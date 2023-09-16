@@ -1,0 +1,11 @@
+Compiler optimizations:
+
+The Go compiler performs several optimizations, including inlining, escape analysis, and dead code elimination. 
+1 - Inlining is the process of replacing a function call with the function’s body, which can improve performance by reducing function call overhead.
+2 - Escape analysis is the process of determining whether a variable’s address is taken, which can help the compiler allocate it on the stack instead of the heap.
+3 - Dead code elimination is the process of removing code that is never executed.
+
+Garbagge Colector:
+
+Go’s garbage collector uses a concurrent, stop-the-world algorithm. This means that while the garbage collector is running, 
+the program is paused and cannot continue execution. The duration of the pause is typically very short and should not be noticeable to the user.
